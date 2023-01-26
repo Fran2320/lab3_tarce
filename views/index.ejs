@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+ *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+-->
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="WebRTC code samples">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta itemprop="description" content="Client-side WebRTC code samples">
+    <meta itemprop="image" content="../../../images/webrtc-icon-192x192.png">
+    <meta itemprop="name" content="WebRTC code samples">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+
+    <base target="_blank">
+
+    <title>Peer connection</title>
+
+    <link rel="icon" sizes="192x192" href="../../../images/webrtc-icon-192x192.png">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" href="../../../css/main.css"/>-->
+    <link rel="stylesheet" href="/stylesheets/css/main.css"/>
+
+    <style>
+        h1 {color:cornflowerblue;}
+        body{ background-color: aliceblue;}
+        button{
+            background-color: cornflowerblue; 
+            border: none;
+            color: white;
+            /*padding: 15px 32px;*/
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+        
+        p{
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;
+        }
+        label{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="container">
+    <h1>Practicas de Tecnologías y Arquitecturas de Redes de Comunicación Emergentes</h1>
+
+    <p>Desarrollo de un servicio de videollamada mediante WebRTC que permite la selección de la entrada de vídeo    </p>
+
+    <video id="localVideo" playsinline autoplay muted></video>
+    <video id="remoteVideo" playsinline autoplay></video>
+
+    <div class="select">
+        <label for="videoSource" >Seleccione la fuente de vídeo: </label><select id="videoSource"></select>
+    </div>
+
+    <!--modificaciones-->
+    <div class="box">
+        <button id="startButton">Start</button>
+        <button id="callButton">Call</button>
+        <button id="hangupButton">Hang Up</button>
+    </div>
+
+    <p>Desarrollado por María Rosa Rodríguez y Francisco Felipe.</p>
+
+    
+
+</div>
+
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="/javascripts/js/main.js" async></script>
+
+<script src="../../../js/lib/ga.js"></script>
+</body>
+</html>
